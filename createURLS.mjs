@@ -13,7 +13,7 @@ const createUrls = (path) => {
     .on('end', () => {
       console.log('Finished');
       console.log(csvData);
-      fs.writeFile('school-urls.csv', csvData, 'utf8', function (err) {
+      fs.writeFile('./out/school-urls.csv', csvData, 'utf8', function (err) {
         if (err) {
           console.log('Some error occured - file either not saved or corrupted file saved.');
         } else{
@@ -23,4 +23,4 @@ const createUrls = (path) => {
     });
 };
 
-createUrls('./caschools.csv');
+createUrls('./csv-xlsx/caschools.csv');
