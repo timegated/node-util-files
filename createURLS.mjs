@@ -23,4 +23,4 @@ const createUrls = (path) => {
     });
 };
 
-createUrls('./csv-xlsx/caschools.csv');
+createUrls('./csv-xlsx/hubspots-contacts.csv');
